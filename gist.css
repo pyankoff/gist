@@ -1,0 +1,11 @@
+/* CSS declarations go here */
+body {
+  text-align: center;
+}
+
+#youtube-video {
+  width: 560px;
+  height: 315px;
+  text-align: center;
+  margin: auto;
+}

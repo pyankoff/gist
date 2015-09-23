@@ -1,0 +1,31 @@
+<head>
+  <title>gist</title>
+</head>
+
+<body>
+  <h1>Welcome to Gist!</h1>
+
+  {{> video}}
+
+  {{> input}}
+
+  {{> gists}}
+</body>
+
+<template name="video">
+    <div id='youtube-video'></div>
+</template>
+
+<template name="input">
+  <form class="gist-input">
+    <input type="text" class="form-control" id="gist" placeholder="Wisdom goes here">
+  
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</template>
+
+<template name="gists">
+  {{#each gists}}
+    {{> gist}}
+  {{/each}}
+</template>
